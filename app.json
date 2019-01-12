@@ -5,6 +5,9 @@
    "version": "1.0.0",
    "slug": "mc-power",
    "sdkVersion": "32.0.0",
+   "splash": {
+    "image": "./assets/images/splash.png"
+    },
    "ios": {
      "bundleIdentifier": "com.mcpower.invisionsourving"
    },
