@@ -1,22 +1,35 @@
-import React from 'react';
-import { ScrollView, View, StyleSheet, Platform } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
-import { Divider } from 'react-native-elements';
+import React, { Component } from 'react';
+import { ScrollView, View, StyleSheet, Platform, Text, Image } from 'react-native';
 
-export default class LinksScreen extends React.Component {
-  static navigationOptions = {
-    header: null,
-  };
+class Company extends Component {
 
   render() {
     return (
-      <View>
-      <ScrollView style={styles.container}>
-      </ScrollView>
+      <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{width: '60%', height: 240, paddingLeft: '5%'}} >
+          <Text style={{fontWeight: 'bold', fontSize: 20, marginBottom: 20, textAlign:'right'}}>MC Power</Text>
+          <Text>
+            Korak ka uspešnijoj budućnosti
+            Slobodno nas kontaktirajte sa bilo kojim 
+            personalnim zahtevom u oblasti obrade metala 
+            i konstrukcije. Rado ćemo vam ponuditi ponudu 
+            prilagođenu Vašem zahtevu, a zatim pružiti uslugu 
+            ``ključ u ruke``. Naš osnovni poslovni tim čine...
+          </Text>
+        </View>
+        <View style={{width: '40%', height: 240, paddingRight: '5%'}} >
+        <Image
+          style={{width: '100%', height: '60%', paddingLeft: '5%', marginTop: '40%'}}
+          resizeMode="cover"
+          source={require('../../assets/images/icon.png')}
+        />
+        </View>
       </View>
     );
   }
 }
+
+export default Company;
 
 const styles = StyleSheet.create({
   container: {
