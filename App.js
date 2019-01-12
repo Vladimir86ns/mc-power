@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
+import { Header } from 'react-native-elements';
 
 export default class App extends React.Component {
   state = {
@@ -20,6 +21,10 @@ export default class App extends React.Component {
     } else {
       return (
         <View style={styles.container}>
+          <Header
+            centerComponent={{ text: 'MC POWER', style: { color: '#fff', fontSize: 25 } }}
+            outerContainerStyles={{ backgroundColor: '#f44e42' }}
+          />
           <AppNavigator />
         </View>
       );
