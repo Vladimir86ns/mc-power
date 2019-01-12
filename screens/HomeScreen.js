@@ -11,6 +11,7 @@ import {
 import { WebBrowser } from 'expo';
 
 import { MonoText } from '../components/StyledText';
+import { Card, ListItem, Button } from 'react-native-elements';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -21,45 +22,112 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={styles.welcomeContainer}>
-            <Image
-              source={
-                __DEV__
-                  ? require('../assets/images/robot-dev.png')
-                  : require('../assets/images/robot-prod.png')
-              }
-              style={styles.welcomeImage}
-            />
-          </View>
-
-          <View style={styles.getStartedContainer}>
-            {this._maybeRenderDevelopmentModeWarning()}
-
-            <Text style={styles.getStartedText}>Get started by opening</Text>
-
-            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-              <MonoText style={styles.codeHighlightText}>screens/HomeScreen.js</MonoText>
-            </View>
-
-            <Text style={styles.getStartedText}>
-              Change this text and your app will automatically reload.
-            </Text>
-          </View>
-
-          <View style={styles.helpContainer}>
-            <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
-              <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
-            </TouchableOpacity>
-          </View>
+          <Card title="Zavarivač MIG – CO2 (Subotica)">
+              <View style={styles.user}>
+                <Image
+                  style={{width:'100%', height:200}}
+                  resizeMode="cover"
+                  source={require('../assets/images/slika1.png')}
+                />
+                <Text style={{marginTop: 10}}>Za proizvodne operacije u Srbiji imamo poziciju "CO2 zavarivač" tokom cele godine. ...</Text>
+                <View
+                  style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                    marginTop: 14,
+                    maxWidth: 120
+                  }}
+                />
+                <Text>
+                  <Text>by </Text><Text style={{fontWeight: 'bold'}}>MC Power</Text>
+                </Text>
+              </View>
+          </Card>
+          <Card title="Farbar (Slovačka, Srbija)">
+              <View style={styles.user}>
+              <Image
+                  style={{width:'100%', height:200}}
+                  resizeMode="cover"
+                  source={require('../assets/images/slika3.png')}
+                />
+                <Text style={{marginTop: 10}}>Za razne proizvodne operacije imamo poziciju „farbar“ tokom cele godine. ...</Text>
+                <View
+                  style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                    marginTop: 14,
+                    maxWidth: 120
+                  }}
+                />
+                <Text>
+                  <Text>by </Text><Text style={{fontWeight: 'bold'}}>MC Power</Text>
+                </Text>
+              </View>
+          </Card>
+          <Card title="Operator U Proizvodnji (Slovačka)">
+              <View style={styles.user}>
+              <Image
+                  style={{width:'100%', height:200}}
+                  resizeMode="cover"
+                  source={require('../assets/images/slika4.png')}
+                />
+                <Text style={{marginTop: 10}}>Za razne proizvodne operacije imamo poziciju „operator u proizvodnji“ tokom cele godine. ...</Text>
+                <View
+                  style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                    marginTop: 14,
+                    maxWidth: 120
+                  }}
+                />
+                <Text>
+                  <Text>by </Text><Text style={{fontWeight: 'bold'}}>MC Power</Text>
+                </Text>
+              </View>
+          </Card>
+          <Card title="Bravar (Srbija)">
+              <View style={styles.user}>
+              <Image
+                  style={{width:'100%', height:200}}
+                  resizeMode="cover"
+                  source={require('../assets/images/slika5.png')}
+                />
+                <Text style={{marginTop: 10}}>Za različite proizvodne operacije u Srbiji, imamo poziciju „Bravar“ tokom cele godine. ...</Text>
+                <View
+                  style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                    marginTop: 14,
+                    maxWidth: 120
+                  }}
+                />
+                <Text>
+                  <Text>by </Text><Text style={{fontWeight: 'bold'}}>MC Power</Text>
+                </Text>
+              </View>
+          </Card>
+          <Card title="Zavarivač CO2 (EU)">
+              <View style={styles.user}>
+              <Image
+                  style={{width:'100%', height:200}}
+                  resizeMode="cover"
+                  source={require('../assets/images/slika2.png')}
+                />
+                <Text style={{marginTop: 10}}>Za razne proizvodne operacije u EU imamo poziciju „CO2 zavarivač“ tokom cele godine. ...</Text>
+                <View
+                  style={{
+                    borderBottomColor: 'black',
+                    borderBottomWidth: 1,
+                    marginTop: 14,
+                    maxWidth: 120
+                  }}
+                />
+                <Text>
+                  <Text>by </Text><Text style={{fontWeight: 'bold'}}>MC Power</Text>
+                </Text>
+              </View>
+          </Card>
         </ScrollView>
-
-        <View style={styles.tabBarInfoContainer}>
-          <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
-
-          <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-            <MonoText style={styles.codeHighlightText}>navigation/MainTabNavigator.js</MonoText>
-          </View>
-        </View>
       </View>
     );
   }
