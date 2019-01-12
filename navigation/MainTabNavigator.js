@@ -15,7 +15,7 @@ HomeStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name='md-information-circle'
+      name='md-list-box'
     />
   ),
 };
@@ -29,7 +29,7 @@ LinksStack.navigationOptions = {
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name='md-link'
+      name='md-home'
     />
   ),
 };
