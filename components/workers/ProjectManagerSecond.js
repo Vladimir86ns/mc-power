@@ -10,26 +10,19 @@ class ProjectManagerSecond extends Component {
           <Text style={{fontWeight: 'bold', fontSize: 20, textAlign:'center'}}>Mgr. Daniel Varganin</Text>
           <Text style={{textAlign:'center'}}>Project manager</Text>
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
-          <View style={{width: '50%', height: 200, paddingLeft: '5%'}} >
-            <Image
-              style={{width: '100%', height: '100%', paddingLeft: '5%', paddingBottom: 40, borderRadius: 10}}
-              source={require('../../assets/images/project-manager.png')}
-            />
-          </View>
-          <View style={{width: '50%', height: 200, paddingRight: '5%', paddingLeft: '2%'}} >
-          <Text>
-            Sa Matušom smo prijatelji dugi niz godina gde smo odrasli u zajedničkom gradu.
-            Mislim da je osnova dugotrajnog prijateljstva ili dugoročnog partnerstva znati se
-            složiti, ponekad napraviti kompromis, uzajamno pomagati i biti lojalan jedan prema 
-            drugom.
-          </Text>
-          </View>
+        <View style={{width: '100%', height: 200, paddingLeft: '5%', justifyContent: 'center', alignItems: 'center'}} >
+          <Image
+            style={{width: '50%', paddingBottom: 40, borderRadius: 10}}
+            source={require('../../assets/images/project-manager.png')}
+          />
         </View>
-        <View style={{width: '100%', height: 500, paddingLeft: '5%', paddingRight: '5%',}} >
+        <View style={{width: '100%', paddingLeft: '5%', paddingRight: '5%',}} >
           <Text>
-            Postavljanjem nekoliko osnovnih pravila stvari mogu funkcionisati ispravno, 
-            bilo da je to prijateljstvo ili posao.
+          Sa Matušom smo prijatelji dugi niz godina gde smo odrasli u zajedničkom gradu.
+            Mislim da je osnova dugotrajnog prijateljstva ili dugoročnog partnerstva znati se
+            složiti, ponekad napraviti kompromis, uzajamno
+          pomagati i biti lojalan jedan prema drugom.Postavljanjem nekoliko osnovnih pravila stvari 
+          mogu funkcionisati ispravno, bilo da je to prijateljstvo ili posao.
           Takođe smo radili na nekoliko jednokratnih projekata u kojima sam bio fokusiran na 
           komunikaciju i direktan kontakt sa našim poslovnim partnerima. Ja spadam među ljude 
           koji su direktni i trudim se tačno nazvati stvari, što pomaže mnogo puta i da smanji 
