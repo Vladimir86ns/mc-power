@@ -22,7 +22,7 @@ export default class App extends React.Component {
       return (
         <View style={styles.container}>
           <Header
-            centerComponent={{ text: 'MC POWER', style: { color: '#fff', fontSize: 25 } }}
+            centerComponent={{ text: 'MC POWER', style: { color: '#fff', fontSize: 25, fontWeight: 'bold' } }}
             outerContainerStyles={{ backgroundColor: '#f44e42' }}
           />
           <AppNavigator />
