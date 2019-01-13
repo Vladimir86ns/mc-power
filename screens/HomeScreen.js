@@ -22,6 +22,36 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+          <View>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                textAlign: 'center',
+                color: '#919191',
+                fontSize: 20
+              }}>
+              POSLOVNA PONUDA
+            </Text>
+            <Text
+              style={{
+                textAlign: 'center',
+                fontSize: 10,
+                color:"#919191"
+              }}>
+              Cenimo pošten rad i lojalnosti naših radnika. Zato manadžment MC Power čine ljudi 
+              koji su započinjali na tim pozicijama. Gde želite Vi da napradujete?
+            </Text>
+            <View
+              style={{
+                marginTop: 3,
+                borderBottomColor: '#8e8e8e',
+                borderBottomWidth: 1,
+                maxWidth: '100%',
+                marginTop: 5
+              }}
+            />
+          </View>
+
           <Card title="Zavarivač MIG – CO2 (Subotica)">
               <View style={styles.user}>
                 <Image

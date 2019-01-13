@@ -26,14 +26,17 @@ export default class SendCvPage extends React.Component {
             <Text
               style={{
                 textAlign: 'center',
-                fontSize: 20
+                fontSize: 20,
+                color: '#919191',
+                fontWeight: 'bold',
               }}>
               ISPUNITE ONLINE VAŠ CV
             </Text>
             <Text
               style={{
                 textAlign: 'center',
-                fontSize: 20
+                fontSize: 15,
+                color: '#919191'
               }}>
               ili nas pozovite na broj – 069/4110415
             </Text>
