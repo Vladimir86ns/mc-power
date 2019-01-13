@@ -2,6 +2,8 @@ import React from 'react';
 import { ScrollView, View, StyleSheet, Platform, Text, Image } from 'react-native';
 import Director from './../components/workers/Director';
 import Company from './../components/workers/Company';
+import ProjectManger from './../components/workers/ProjectManager';
+import ProjectMangerSecond from './../components/workers/ProjectManagerSecond';
 
 export default class AboutUsScreen extends React.Component {
   static navigationOptions = {
@@ -14,6 +16,8 @@ export default class AboutUsScreen extends React.Component {
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
           <Company/>
           <Director/>
+          <ProjectManger/>
+          <ProjectMangerSecond/>
         </ScrollView>
       </View>
     );

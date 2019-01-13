@@ -6,6 +6,10 @@ class Director extends Component {
   render() {
     return (
       <View>
+          <View style={{width: '100%', height: 50 }} >
+            <Text style={{fontWeight: 'bold', fontSize: 20, textAlign:'center'}}>JUDr. Matúš Čorba</Text>
+            <Text style={{textAlign:'center'}}>Direktor / Vlasnik</Text>
+          </View>
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View style={{width: '50%', height: 200, paddingLeft: '5%'}} >
               <Image
