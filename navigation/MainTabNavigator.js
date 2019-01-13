@@ -4,7 +4,7 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import AboutUsScreen from '../screens/AboutUsScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import SendCvPage from '../screens/SendCvPage';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -34,16 +34,16 @@ LinksStack.navigationOptions = {
   ),
 };
 
-const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen,
+const SendCVStack = createStackNavigator({
+  SendCv: SendCvPage,
 });
 
-SettingsStack.navigationOptions = {
-  tabBarLabel: 'Settings',
+SendCVStack.navigationOptions = {
+  tabBarLabel: 'Posalji CV',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name='md-options'
+      name='md-document'
     />
   ),
 };
@@ -51,5 +51,5 @@ SettingsStack.navigationOptions = {
 export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
-  SettingsStack,
+  SendCVStack,
 });
