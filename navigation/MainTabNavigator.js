@@ -5,6 +5,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import AboutUsScreen from '../screens/AboutUsScreen';
 import SendCvPage from '../screens/SendCvPage';
+import ContactScreen from '../screens/ContactScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -48,8 +49,23 @@ SendCVStack.navigationOptions = {
   ),
 };
 
+const ContactStack = createStackNavigator({
+  Contact: ContactScreen,
+});
+
+ContactStack.navigationOptions = {
+  tabBarLabel: 'Kontakt',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name='md-contacts'
+    />
+  ),
+};
+
 export default createBottomTabNavigator({
   HomeStack,
   LinksStack,
   SendCVStack,
+  ContactStack
 });
