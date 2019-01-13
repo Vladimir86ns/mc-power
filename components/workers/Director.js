@@ -10,25 +10,17 @@ class Director extends Component {
             <Text style={{fontWeight: 'bold', fontSize: 20, textAlign:'center'}}>JUDr. Matúš Čorba</Text>
             <Text style={{textAlign:'center'}}>Direktor / Vlasnik</Text>
           </View>
-          <View style={{flex: 1, flexDirection: 'row'}}>
-            <View style={{width: '50%', height: 200, paddingLeft: '5%'}} >
-              <Image
-                style={{width: '100%', height: '100%', paddingLeft: '5%', paddingBottom: 40, borderRadius: 10}}
-                source={require('../../assets/images/vlasnik.png')}
-              />
-            </View>
-            <View style={{width: '50%', height: 200, paddingRight: '5%', paddingLeft: '2%'}} >
+        <View style={{width: '100%', height: 200, paddingLeft: '5%', justifyContent: 'center', alignItems: 'center'}} >
+          <Image
+            style={{width: '50%', paddingBottom: 40, borderRadius: 10}}
+            source={require('../../assets/images/vlasnik.png')}
+          />
+        </View>
+          <View style={{width: '100%', paddingLeft: '5%', paddingRight: '5%',}} >
             <Text>
             MC POWER osnovao sa ciljem da izgradim snažnu i stabilnu kompaniju u oblasti 
             metaloprerađivačke i građevinske delatnosti, posebno po personalnoj strani.
-            Naši počeci nisu bili laki na tržištu (kao kod svakog preduzeća kod nas), ali 
-            postepeno smo se probili na tržište
-            </Text>
-            </View>
-          </View>
-          <View style={{width: '100%', height: 500, paddingLeft: '5%', paddingRight: '5%',}} >
-            <Text>
-            među važnije igrače, gde sada zapošljavamo 
+            Naši počeci nisu bili laki na tržištu među važnije igrače, gde sada zapošljavamo 
             više od 100 radnika. U 2017. godini zabeležili smo rast od preko 400% godišnje. 
             Danas smo aktivni u nekoliko zemalja EU kao i u zemljama Trećeg sveta. Nastojimo 
             da osiguramo sveobuhvatnu uslugu našim klijentima ključ u ruke, gde nakon postavljanja
